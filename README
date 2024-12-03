@@ -1,0 +1,82 @@
+# Visualisateur de Catégories Alimentaires
+
+## ⚠️ Important - À lire avant utilisation
+
+Ce dépôt contient des fichiers sources extraits d'un projet Laravel utilisant une architecture modulaire personnalisée. **Ce n'est pas un projet autonome directement exécutable**.
+
+Les fichiers sont fournis à titre de référence et peuvent nécessiter des adaptations significatives pour fonctionner dans votre environnement.
+
+## 🎯 Objectif du Projet
+
+Cette application web permet de visualiser les relations entre :
+- Les codes-barres de produits alimentaires
+- Les catégories Open Food Facts (OFF)
+- Les catégories Agribalyse
+
+Elle crée une représentation visuelle interactive des liens entre ces différentes classifications, permettant de mieux comprendre comment les produits sont catégorisés dans différentes taxonomies alimentaires.
+
+## 🔍 Fonctionnalités
+
+1. **Recherche par code-barres**
+   - Interface simple pour saisir un code-barres
+   - Interrogation de l'API Robotoff (Open Food Facts) pour obtenir les prédictions de catégories
+
+2. **Visualisation D3.js**
+   - Représentation graphique des relations entre :
+     - Le produit (code-barres)
+     - Les catégories OFF prédites
+     - Les catégories Agribalyse correspondantes
+   - Affichage des scores de confiance pour chaque prédiction
+   - Visualisation des écoscores Agribalyse
+   - Légende interactive
+
+## 🛠️ Architecture Technique
+
+- **Backend** : Laravel avec architecture modulaire personnalisée
+- **Frontend** : Vue.js 3 + Inertia.js
+- **Base de données** :
+  - Table `off_categories` : Catégories Open Food Facts
+  - Table `agribalyse_categories` : Catégories et scores Agribalyse
+- **API** : Intégration avec l'API Robotoff d'Open Food Facts
+- **Visualisation** : D3.js pour le rendu graphique
+
+## 📝 Structure des Fichiers
+
+Les fichiers fournis proviennent d'une architecture modulaire et comprennent :
+- Contrôleurs Laravel
+- Composants Vue.js
+- Migrations de base de données
+- Configuration de routes
+- Définitions de modèles
+
+## ⚙️ Utilisation des Fichiers
+
+Ces fichiers sont destinés à être utilisés comme référence pour :
+- Comprendre l'architecture d'une application Laravel modulaire
+- Voir un exemple d'intégration d'APIs externes
+- Étudier l'implémentation de visualisations D3.js avec Vue 3
+- Explorer la gestion de données taxonomiques alimentaires
+
+## ⚠️ Avertissements
+
+1. **Architecture Spécifique**
+   - Les fichiers proviennent d'une architecture modulaire personnalisée
+   - Une adaptation sera nécessaire pour les utiliser dans un projet Laravel standard
+
+2. **Dépendances**
+   - Le code suppose l'existence de plusieurs composants personnalisés
+   - Certaines dépendances peuvent ne pas être incluses dans ce dépôt
+
+3. **Base de Données**
+   - Les schémas de base de données sont fournis mais pas les données
+   - Les données de catégories OFF et Agribalyse doivent être obtenues séparément
+
+## 🤝 Contribution
+
+Ce projet est fourni à titre d'exemple et de référence. Pour toute question ou suggestion :
+1. Ouvrez une issue pour discuter des modifications proposées
+2. Soumettez une pull request avec vos améliorations
+
+## 📜 Licence
+
+Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.

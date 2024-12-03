@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    @apply h-full;
+}
+
+.creative-editor.ubq-public
+{
+    position: absolute;
+}
+
+main footer {
+    transition: padding-left 0.5s ease;
+}
+
+main.isCollapsed footer {
+    padding-left: 8rem;
+}
+
+main.notCollapsed footer {
+    padding-left: 20rem;
+}
+
+@media (max-width: 1023px) {
+    main.isCollapsed footer {
+        padding-left: 1rem;
+    }
+}
+
+.multiselect__tags {
+    min-height: unset !important;
+    @apply rounded-md border-gray-300 !important;
+}
+
+.multiselect[style-mode="light"] > .multiselect__tags {
+    @apply bg-gray-50 border-0 border-b-2 !important;
+}
+
+.multiselect__input:focus {
+    @apply ring-transparent;
+}
+
+.tooltip .tooltip-text {
+    @apply invisible -translate-x-1/2;
+}
+
+.tooltip:hover .tooltip-text {
+    @apply visible;
+}
+
+.colors .item:nth-child(8n+1) {
+    margin-left: 10px !important;
+}
+
+.overflow-wrap {
+    overflow-wrap: break-word;
+}
+
+
+
+.m-phone-number-input{
+    margin-top: 10px !important;
+    width: 100%;
+}
+.m-input-wrapper {
+    border: 1px solid rgb(209, 213, 219) !important;
+}
+
+.m-country-selector__select .m-input-wrapper{
+    border-right: none !important;
+}
+
+.m-select-list{
+    background: white !important;
+}
